@@ -3,8 +3,8 @@ output = open("01.txt", "w")
 
 for line in input:
     datalist = line.strip().split("    ")
-    date, time,store, item, cost, paymentType = datalist
-    output.write(store + "\t" + cost + "\n")
+    date, time,location, dept, amount, paymentType = datalist
+    output.write(location + "\t" + amount + "\n")
 
 input.close()
 output.close()
